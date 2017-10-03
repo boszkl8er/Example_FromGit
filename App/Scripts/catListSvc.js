@@ -1,8 +1,8 @@
 ﻿'use strict';
 angular.module('catApp')
 .factory('catListSvc', ['$http', function ($http) { 
-	//var apiUrl = 'https://spaauthdemoapi.kvaes.be';
-	var apiUrl = 'http://kittipong-tst-webapp.azurewebsites.net';
+	var apiUrl = 'https://spaauthdemoapi.kvaes.be';
+	//var apiUrl = 'http://kittipong-tst-webapp.azurewebsites.net';
     return {
         getItems : function(){
             return $http.get(apiUrl + '/api/CatList');
